@@ -1,4 +1,5 @@
 'use client';
+
 import About from "./about/page";
 import Contact from "./contact/page";
 import { useState } from 'react';
@@ -39,7 +40,7 @@ export default function Mypage() {
 
                 <div className="my-5 py-8 px-2 bg-gray-300 font-semibold text-[20px] text-black shadow-lg transition-transform transform hover:scale-105" >
 
-                <p> Hi, I'm Kashaf Shaikh, a beginner frontend developer with a growing passion for creating dynamic web applications. I’m currently exploring TypeScript, Tailwind CSS, and Next.js, building my skills as I progress. I love the challenge of learning new technologies and am excited to see how I can apply them to real-world projects. </p>  
+                <p> Hi, I&apos;m Kashaf Shaikh, a beginner frontend developer with a growing passion for creating dynamic web applications.  currently exploring TypeScript, Tailwind CSS, and Next.js, building my skills as I progress. I love the challenge of learning new technologies and am excited to see how I can apply them to real-world projects. </p>  
                 </div>
 
                 {/* Toggle Theme button */}

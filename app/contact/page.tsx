@@ -7,7 +7,7 @@ export default function Contact() {
    
             <div className='rounded-2xl border-white border-y-[4px] my-20 p-6 sm:p-6 md:p-8 lg:p-10 shadow-lg transition-transform transform hover:scale-105'>
                 <p className='my-8 sm:my-8 md:my-14 text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-white px-4 sm:px-8 md:px-12 lg:px-24 xl:px-48'>
-                    Feel free to reach out if you have any questions, want to collaborate, or just want to connect. I'm always open to interesting conversations and opportunities!
+                    Feel free to reach out if you have any questions, want to collaborate, or just want to connect. I&apos;m always open to interesting conversations and opportunities!
                 </p>
 
                 <h3 className='text-center text-white text-[30px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-kaushan tracking-wider'>
@@ -19,7 +19,7 @@ export default function Contact() {
                     <p className="text-white text-lg sm:text-lg md:text-xl">📍 Location: Karachi, Pakistan</p>
                 </div> 
             </div>
-        </div>
+     </div>
     )
 }
 

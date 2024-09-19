@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 
 export default function About(){
@@ -12,7 +13,7 @@ export default function About(){
 
             <h3 className='text-white text-center text-[30px] md:text-[35px] lg:text-[40px] font-kaushan tracking-wider'>I am Kashaf</h3>  
 
-            <p className='my-10 md:my-14 text-[16px] md:text-[18px] lg:text-[20px] text-white px-4 md:px-12 lg:px-24 xl:px-48'>👋 Hi, I’m Kashaf Shaikh, a student of Giaic a passionate frontend developer with a focus on creating dynamic and visually appealing web applications. I'm currently building my skills in TypeScript, Tailwind CSS, and Next.js, exploring the exciting world of frontend development. Though I’m a beginner in these technologies, I’m always eager to learn, grow, and take on new challenges that help me develop as a professional. Let's build something amazing together!</p>
+            <p className='my-10 md:my-14 text-[16px] md:text-[18px] lg:text-[20px] text-white px-4 md:px-12 lg:px-24 xl:px-48'>👋 Hi, I&apos;m Kashaf Shaikh, a student of Giaic and a passionate frontend developer with a focus on creating dynamic and visually appealing web applications. I&apos;m currently building my skills in TypeScript, Tailwind CSS, and Next.js, exploring the exciting world of frontend development. Though I&apos;m a beginner in these technologies, I&apos;m always eager to learn, grow, and take on new challenges that help me develop as a professional. Let&apos;s build something amazing together!</p>
             
             <h3 className='text-white text-center text-[30px] md:text-[35px] lg:text-[40px] font-kaushan tracking-wider'>Education</h3>  
 
