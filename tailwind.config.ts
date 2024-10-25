@@ -6,16 +6,16 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    fontFamily: {
-      'kaushan': ["Kaushan Script"],
-    },
+    theme: {
+        fontFamily: {
+       'kaushan': ["Kaushan Script"],
+     },
     extend: {
       colors:{
          green:{
             DEFAULT: '#00f260',
         },
-      },
+     },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -26,3 +26,6 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
+
+

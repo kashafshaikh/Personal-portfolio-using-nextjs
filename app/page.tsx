@@ -1,65 +1,60 @@
-'use client';
+"use client";
 
+import Image from "next/image";
+import {TypeAnimation} from 'react-type-animation';
 import About from "./about/page";
 import Contact from "./contact/page";
-import { useState } from 'react';
-import { FaInstagram } from "react-icons/fa";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
-import Image from 'next/image';
-
-export default function Mypage() {
-    const [isDarkMode, setIsDarkMode] = useState(false);
-
-    const toggleTheme = () => {
-        setIsDarkMode(prevMode => !prevMode);
-    };
-
+export default function Home() {
     return (
-            <div className={`rounded-2xl border-white border-y-[6px] p-4 my-14 lg:px-48 px-5 sm:px-20 md:px-32 text-center ${isDarkMode ? 'bg-black' : 'bg-gray-900'}`}>
-                <Image src="/myAvatar.jpeg" alt="my Avatar" width={200} height={100} className="mx-auto rounded-3xl border-y-[4px] border-white" />
-                <h3 className="my-4 text-5xl font-semibold tracking-wider font-kaushan text-green-600">
-                    <span className="text-sky-700">Kashaf </span>
-                    Shaikh
-                </h3>
-
-                <p className="px-2 py-1 my-3 bg-gray-300 text-[20px] font-semibold rounded-full text-black">Student of Giaic</p>
-
-                {/* Social icons */}
-                <div className="flex justify-around my-5 w-9/12 md:w-full mx-auto">
-                    <a href="">
-                        <FaInstagram className="w-8 h-8 text-pink-700 cursor-pointer" />
-                    </a>
-                    <a href="">
-                        <AiFillGithub className="w-8 h-8 text-fuchsia-700 cursor-pointer" />
-                    </a>
-                    <a href="">
-                        <AiFillLinkedin className="w-8 h-8 text-blue-700 cursor-pointer" />
-                    </a>
+        <main className="flex min-h-screen flex-col bg-[#121212]">
+            <div className="container mx-auto py-4 px-12 pt-32">
+            <div className="grid grid-cols-1 sm:grid-cols-12">
+                <div className="col-span-7 place-self-center text-center sm:text-left">
+                    <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> Hello, I am{""} </span>
+                        <br></br>
+                         <TypeAnimation
+                         sequence={[
+                          'Kashaf Shaikh',
+                          1000,
+                          'Student of GIAIC',
+                          1000,
+                          'Frontend Developer',
+                          1000,
+                         ]}
+                         wrapper="span"
+                         speed='50'
+                         repeat={Infinity}
+                         />
+                           
+                    </h1>
+                    <p className="text-[#ADB7BE] text-base sm:text-md lg:text-xl mb-6">
+                    Hi, I&apos;m Kashaf Shaikh, a beginner frontend developer with a growing passion for creating dynamic web applications.  currently exploring TypeScript, Tailwind CSS, and Next.js, building my skills as I progress. I love the challenge of learning new technologies and am excited to see how I can apply them to real-world projects.
+                    </p>
+                    <div>
+                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">Hire me</button>
+                        <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white mt-3">
+                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span></button>
+                    </div>
                 </div>
-
-                <div className="my-5 py-8 px-2 bg-gray-300 font-semibold text-[20px] text-black shadow-lg transition-transform transform hover:scale-105" >
-
-                <p> Hi, I&apos;m Kashaf Shaikh, a beginner frontend developer with a growing passion for creating dynamic web applications.  currently exploring TypeScript, Tailwind CSS, and Next.js, building my skills as I progress. I love the challenge of learning new technologies and am excited to see how I can apply them to real-world projects. </p>  
+                <div className="col-span-5 place-self-center mt-4 lg:mt-0 mb-6">
+                    <div className="rounded-full bg-[#181818] w-[380px] h-[380px] lg:w-[450px] lg:h-[450px] relative overflow-hidden mt-6">
+                        <Image
+                            src="/myAvatar.jpeg"
+                            alt="my-image"
+                            height={200}
+                            width={230}
+                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-[50%]"
+                        />
+                    </div>
                 </div>
-
-                {/* Toggle Theme button */}
-                <button className="bg-gradient-to-r from-green-500 to-blue-500 w-8/12 rounded-full py-2 px-5 my-2 text-white"
-                    onClick={toggleTheme}>
-                    Toggle Theme
-                </button>
-                <About/>
-                <Contact/>
             </div>
+         </div>
+         <About/>
+         <Contact/>
+        </main>
     );
 }
-
-
-
-
-
-
-
-
 
 

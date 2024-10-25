@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <div className="text-center text-white bg-cyan-900 mt-32 border-t-[4px] border-white py-[40px] sm:py-[50px] md:py-[60px]">
+    <div className="text-center text-[#ADB7BE] bg-[#121212] mt-32 border-t-[4px] border-pink-900 py-[40px] sm:py-[50px] md:py-[60px]">
       
       <p className="text-[16px] sm:text-[18px] md:text-[20px]">
         Stay Connected with My Work:
@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="flex justify-center mx-auto py-4 sm:py-5 space-x-6 sm:space-x-8 text-[20px]">
         {/* Email */}
         <a href="mailto:billushaikhshaikh@gmail.com">
-          <AiOutlineMail className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] text-white cursor-pointer transition-transform transform hover:scale-110 hover:bg-gray-900 rounded-full p-1" />
+          <AiOutlineMail className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] text-pink-600 cursor-pointer transition-transform transform hover:scale-110 hover:bg-gray-900 rounded-full p-1" />
         Email</a>
 
         {/* GitHub */}
@@ -21,7 +21,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiFillGithub className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] text-white cursor-pointer transition-transform transform hover:scale-110 hover:bg-gray-900 rounded-full p-1" />
+          <AiFillGithub className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] text-pink-600 cursor-pointer transition-transform transform hover:scale-110 hover:bg-gray-900 rounded-full p-1" />
         Github</a>
 
         {/* LinkedIn */}
@@ -30,7 +30,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiFillLinkedin className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] text-white cursor-pointer transition-transform transform hover:scale-110 hover:bg-gray-900 rounded-full p-1" />
+          <AiFillLinkedin className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] text-pink-600 cursor-pointer transition-transform transform hover:scale-110 hover:bg-gray-900 rounded-full p-1" />
         Linkedin</a>
       </div>
 
