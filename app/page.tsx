@@ -24,7 +24,7 @@ export default function Home() {
                           1000,
                          ]}
                          wrapper="span"
-                         speed='50'
+                         speed={50}
                          repeat={Infinity}
                          />
                            
