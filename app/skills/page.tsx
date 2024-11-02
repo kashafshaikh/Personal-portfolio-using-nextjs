@@ -5,19 +5,19 @@ export default function Skills(){
         {
             id: 1,
             title: "HTML",
-            image: "/skills-images/html.jfif",
+            image: "/skills-images/html.png",
             percent: "90%",
         },
         {
             id: 2,
             title: "CSS",
-            image: "/skills-images/css.png",
+            image: "/skills-images/css.webp",
             percent: "75%",
         },
         {
             id: 3,
             title: "Javascript",
-            image: "/skills-images/js.jfif",
+            image: "/skills-images/js.webp",
             percent: "75%",
         },
         {
