@@ -4,6 +4,7 @@ import Image from "next/image";
 import {TypeAnimation} from 'react-type-animation';
 import About from "./about/page";
 import Contact from "./contact/page";
+import Skills from "./skills/page";
 
 export default function Home() {
     return (
@@ -52,6 +53,7 @@ export default function Home() {
             </div>
          </div>
          <About/>
+         <Skills/>
          <Contact/>
         </main>
     );

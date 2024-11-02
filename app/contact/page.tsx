@@ -17,7 +17,7 @@ export default function Contact() {
   return (
     <section>
       <div className="text-white relative top-[100px] px-4 md:px-0">
-        <h1 className="text-3xl md:text-5xl text-center font-bold mb-[30px] md:mb-[100px] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+        <h1 className="text-4xl md:text-5xl text-center font-bold mb-[30px] md:mb-[100px] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
           CONTACT US
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-[500px] w-full md:gap-0">
